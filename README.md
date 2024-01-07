@@ -1,7 +1,8 @@
 # Patricks Homelab
 
-[![tag](https://img.shields.io/github/v/tag/patrickterlisten/homelab?style=flat-square&logo=semver&logoColor=white)](https://github.com/patrickterlisten/homelab/tags) [![License](https://img.shields.io/github/license/patrickterlisten/homelab
-) ![GitHub Repo stars](https://img.shields.io/github/stars/patrickterlisten/homelab)
+[![tag](https://img.shields.io/github/v/tag/patrickterlisten/homelab?style=flat-square&logo=semver&logoColor=white)](https://github.com/patrickterlisten/homelab/tags)
+![GitHub License](https://img.shields.io/github/license/patrickterlisten/homelab?style=flat-square&logo=semver&color=white)
+![GitHub Repo stars](https://img.shields.io/github/stars/patrickterlisten/homelab?style=flat-sqaure&logo=semver&color=white)
 
 
 After years of relying on hardware at work or cloud infrastructure, I started to setup a lab at home again.
