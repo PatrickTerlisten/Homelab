@@ -1,5 +1,9 @@
 # Patricks Homelab
 
+[![tag](https://img.shields.io/github/v/tag/patrickterlisten/homelab?style=flat-square&logo=semver&logoColor=white)](https://github.com/patrickterlisten/homelab/tags) [![License](https://img.shields.io/github/license/patrickterlisten/homelab
+) ![GitHub Repo stars](https://img.shields.io/github/stars/patrickterlisten/homelab)
+
+
 After years of relying on hardware at work or cloud infrastructure, I started to setup a lab at home again.
 
 After being more than two decades in IT, while primarly working on the full stack (server, storage, networking, virtualization), the stacks starts to shift again. While using virtualization with VMware and Hyper-V for over 15y, Container, Cloud and IaC seems to be the next big stack evolution. This lab is mainly used to get my hands dirty with
