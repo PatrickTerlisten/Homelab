@@ -58,6 +58,21 @@ A small note: Yes, this is fibre optic on the patch panel. During the building o
 
 There is an AVM Fritz!Repeater 2400 on the first floor and on the second floor, which work together with the AVM Fritz!Box 5590 in the network rack. Deutsche Telekom was kind enough to install fiber optics (100 Mbit down/ 40 Mbit up) in the house.
 
+The Proxmox server and the Synology DS414slim are both connected with 1 GbE to the HP 1920 switch.
+
 ### Software
 
-The server is currently running Proxmox VE 8.1, which is installed onto the WD Black.
+As a VMware guy the installation of VMware ESXi would be a no-brainer, but unfortunately Broadcom decided to cancel the VMware free hypervisor. Because of this, and because im pretty interested in alternatives to VMware ESXi, I decided to install [Proxmox Virtual Environment](https://www.proxmox.com/). The installation was pretty flawless. I installed Proxmox VE directly onto the WD Black. The installation will use the whole disk. So make sure that you are willing to loose all data on it.
+
+The space of the WD Black is completly consumed by a single LVM volume group (VG) called *pve*. The storage, that is not used by the root and swap filesystem, is configured as a LVM thin pool. The same applies to the WD Green, which is also used as a LVM thin pool (volume group "data).
+
+```
+root@proxmox:~# pvesm status
+Name                 Type     Status           Total            Used       Available        %
+local                 dir     active       100597760        26230492        74367268   26.07%
+local-wdblack     lvmthin     active       838860800        28605153       810255646    3.41%
+local-wdgreen     lvmthin     active      1932738560               0      1932738560    0.00%
+nas-backup            nfs     active      1450950272       696970752       753877120   48.04%
+```
+
+I'm currently running Proxmox VE 8.1 (Kernel 6.5.11-4-pve).
