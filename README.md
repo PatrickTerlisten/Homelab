@@ -78,18 +78,18 @@ As a VMware guy the installation of VMware ESXi would be a no-brainer, but unfor
         <th>Description</th>
     </tr>
     <tr>
-        <td><img width="32" src="https://simpleicons.org/icons/ansible.svg"></td>
+        <td><img width="32" src="static/logo/ansible.svg"></td>
         <td><a href="https://www.ansible.com">Ansible</a></td>
         <td>Configuration management</td>
     </tr>
     <tr>
-        <td><img width="32" src="https://avatars.githubusercontent.com/u/52939924?v=4></td>
-        <td><a href="https://www.terraform.io/>Terraform</a></td>
+        <td><img width="32" src="static/logo/tarraform.png"></td>
+        <td><a href="https://www.terraform.io">Terraform</a></td>
         <td>Infrastructure deployment</td>
     </tr>
     <tr>
-        <td><img width="32" src="https://iconduck.com/icons/1936/proxmox</td>
-        <td><a href="https://www.proxmox.com/de/">Proxmox VE</a></td>
+        <td><img width="32" src="static/logo/proxmox.svg"></td>
+        <td><a href="https://www.proxmox.com">Proxmox VE</a></td>
         <td>Bare Metal Hypervisor</td>
     </tr>
 </table>
