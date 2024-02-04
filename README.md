@@ -19,6 +19,13 @@ Project status: **ALPHA**
 
 This project is still in a very early stage.
 
+### Use case
+
+- [x] Common applications: Paperless NGX (to be continued)
+- [x] Support multiple environments (dev, prod)
+- [x] Infrastructure as Code (Terraform, Ansible)
+- [x] Container Infrastrucutre (Docker, Kubernetes)
+
 ### Hardware
 
 Instead of using four HPE ProLiant DL360 G7 and a Synology NAS as in my first lab, I decided to use something smaller, quiter and less power hungry. The hardware of choise was a chinese barebone [HUNSN RJ42](https://amzn.eu/d/3kxxmGl).
@@ -60,19 +67,29 @@ There is an AVM Fritz!Repeater 2400 on the first floor and on the second floor, 
 
 The Proxmox server and the Synology DS414slim are both connected with 1 GbE to the HP 1920 switch.
 
-### Software
+### Tech Stack
 
-As a VMware guy the installation of VMware ESXi would be a no-brainer, but unfortunately Broadcom decided to cancel the VMware free hypervisor. Because of this, and because im pretty interested in alternatives to VMware ESXi, I decided to install [Proxmox Virtual Environment](https://www.proxmox.com/). The installation was pretty flawless. I installed Proxmox VE directly onto the WD Black. The installation will use the whole disk. So make sure that you are willing to loose all data on it.
+As a VMware guy the installation of VMware ESXi would be a no-brainer, but unfortunately Broadcom decided to cancel the VMware free hypervisor. This lead to the nice chance to try another hypervisor, in my case, [Proxmox Virtual Environment](https://www.proxmox.com/). The installation was pretty flawless. I installed Proxmox VE directly onto the WD Black NVMe. 
 
-The space of the WD Black is completly consumed by a single LVM volume group (VG) called *pve*. The storage, that is not used by the root and swap filesystem, is configured as a LVM thin pool. The same applies to the WD Green, which is also used as a LVM thin pool (volume group "data).
-
-```
-root@proxmox:~# pvesm status
-Name                 Type     Status           Total            Used       Available        %
-local                 dir     active       100597760        26230492        74367268   26.07%
-local-wdblack     lvmthin     active       838860800        28605153       810255646    3.41%
-local-wdgreen     lvmthin     active      1932738560               0      1932738560    0.00%
-nas-backup            nfs     active      1450950272       696970752       753877120   48.04%
-```
-
-I'm currently running Proxmox VE 8.1 (Kernel 6.5.11-4-pve).
+<table>
+    <tr>
+        <th>Logo</th>
+        <th>Name</th>
+        <th>Description</th>
+    </tr>
+    <tr>
+        <td><img width="32" src="https://simpleicons.org/icons/ansible.svg"></td>
+        <td><a href="https://www.ansible.com">Ansible</a></td>
+        <td>Configuration management</td>
+    </tr>
+    <tr>
+        <td><img width="32" src="https://avatars.githubusercontent.com/u/52939924?v=4></td>
+        <td><a href="https://www.terraform.io/>Terraform</a></td>
+        <td>Infrastructure deployment</td>
+    </tr>
+    <tr>
+        <td><img width="32" src="https://iconduck.com/icons/1936/proxmox</td>
+        <td><a href="https://www.proxmox.com/de/">Proxmox VE</a></td>
+        <td>Bare Metal Hypervisor</td>
+    </tr>
+</table>
