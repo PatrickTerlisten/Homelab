@@ -69,7 +69,9 @@ The Proxmox server and the Synology DS414slim are both connected with 1 GbE to t
 
 ### Tech Stack
 
-As a VMware guy the installation of VMware ESXi would be a no-brainer, but unfortunately Broadcom decided to cancel the VMware free hypervisor. This lead to the nice chance to try another hypervisor, in my case, [Proxmox Virtual Environment](https://www.proxmox.com/). The installation was pretty flawless. I installed Proxmox VE directly onto the WD Black NVMe. 
+As a VMware guy the installation of VMware ESXi would be a no-brainer, but unfortunately Broadcom decided to cancel the VMware free hypervisor. This lead to the nice chance to try another hypervisor, in my case, [Proxmox Virtual Environment](https://www.proxmox.com/).
+
+The following software is also used:
 
 <table>
     <tr>
