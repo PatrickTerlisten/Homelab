@@ -49,17 +49,17 @@ I ordered the system without SSD and memory and added these components:
   
 The whole system is fanless and consumes about 10W per hour, which makes ~30 € per year (based on the current power costs in Germany). As you can see on the pictures, the system offers a lot of connectivity. You might also notice the two SATA ports on the mainboard. There is no way to get a 2,5" disk into the case, but you can route the cables through a opening on the bottom of the case.
 
-![front](/static/images/IMG_6705.jpg "Front")
+![front](/static/images/barebone_front.jpg "Front")
 
-![back](/static/images/IMG_6706.jpg "Back")
+![back](/static/images/barebone_back.jpg "Back")
 
-![inside](/static/images/IMG_6708.jpg "Inside")
+![inside](/static/images/barebone_inside.jpg "Inside")
 
 ### Home network
 
 This is a picture of my network rack. You may get an impression of how small the computer is. On the left is my NAS, a Synology DS414slim with four 480 GB SSDs. I use it for file shares and with NFS as a backup target.
 
-![network rack](/static/images/IMG_6711.jpg "Network Rack")
+![network rack](/static/images/networkrack.jpg "Network Rack")
 
 A small note: Yes, this is fibre optic on the patch panel. During the building of our house, I managed it to get some single mode fibre cables into each bed room and my home office. :)
 
