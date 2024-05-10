@@ -45,7 +45,7 @@ I ordered the system without SSD and memory and added these components:
 
 - Corsair VENGEANCE 32GB DDR5 SODIMM [Link](https://amzn.eu/d/2hHZxY5)
 - WD Black SN770 NVMe with 1 TB [Link](https://amzn.eu/d/bLbd7x9)
-- WD Green SN350 NVMe with 2 TB [Link](https://amzn.eu/d/bLbd7x9)
+- WD Green SN350 NVMe with 2 TB [Link](https://amzn.eu/d/3nqQoNK)
   
 The whole system is fanless and consumes about 10W per hour, which makes ~30 € per year (based on the current power costs in Germany). As you can see on the pictures, the system offers a lot of connectivity. You might also notice the two SATA ports on the mainboard. There is no way to get a 2,5" disk into the case, but you can route the cables through a opening on the bottom of the case.
 
