@@ -36,6 +36,7 @@ Add the following content to the file.
 
 ```yaml
 #cloud-config
+
 hostname: ubuntu-ci
 manage_etc_hosts: true
 users:
